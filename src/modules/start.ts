@@ -11,8 +11,8 @@ composer
     await ctx.reply(ctx.t("start-msg", { user: ctx.from!.first_name }), {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
-        .url("➕ Add Me To Your Channel ➕", `https://t.me/${ctx.me.username}?start${channelOrGroup}=true&admin=invite_users+manage_chat`).row()
-        .url("➕ Add Me To Your Group ➕", `https://t.me/${ctx.me.username}?start${channelOrGroup}=true&admin=invite_users+manage_chat`).row()
+        .url("➕ Add Me To Your Channel ➕", `https://t.me/${ctx.me.username}?startchannel=true&admin=invite_users+manage_chat`).row()
+        .url("➕ Add Me To Your Group ➕", `https://t.me/${ctx.me.username}?startgroup=true&admin=invite_users+manage_chat`).row()
         .url("📢 Updates Channel", "https://t.me/LinuxBotz"),
       disable_web_page_preview: true,
     });
