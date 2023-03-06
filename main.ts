@@ -5,7 +5,7 @@ Telegram: @ChannelActionsBot
 (c) Aditya, https://xditya.me
 */
 
-import config from "/$env";
+import config from "$env";
 import composer from "./src/modules/mod.ts";
 import { MyContext } from "./src/core/types.ts";
 import { sessionsCollection } from "./src/database/sessionsDb.ts";
