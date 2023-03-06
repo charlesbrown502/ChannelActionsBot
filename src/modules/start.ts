@@ -12,7 +12,7 @@ composer
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
         .url("➕ Add Me To Your Channel ➕", "https://t.me/ChatActionBot?startchannel=true")
-        .url("➕ Add Me To Your Group ➕", "https://t.me/ChatActionBot?startgroup=true").row()
+        .url("➕ Add Me To Your Group ➕", "https://t.me/ChatActionBot?startgroup=true")
         .url("📢 Updates Channel", "https://t.me/LinuxBotz"),
       disable_web_page_preview: true,
     });
