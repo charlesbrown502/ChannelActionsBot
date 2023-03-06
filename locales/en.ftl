@@ -1,5 +1,6 @@
-start-msg = Hi {$user}!
-    <b>I'm Chat Action Bot</b>
+start-msg = Hey {$user}!
+
+    I'm Chat Action Bot
     I can auto approve/decline chat join requests
 
     Add me to your chat as administrator with `can_invite_users` administrator right. And forward me a message from that chat to set me up
