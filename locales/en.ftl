@@ -1,11 +1,8 @@
 start-msg = Hi {$user}!
-    <b>I'm Channel Actions Bot</b>, a bot mainly focused on working with the new <a href='https://t.me/telegram/153'>admin approval invite links</a>.
+    <b>I'm Chat Action Bot</b>
+    I can auto approve/decline chat join requests
 
-    <i>I can</i>:
-    - <i>Auto approve new join requests</i>
-    - <i>Auto Decline New Join Requests.</i>
-
-    <code>Click the below button to know how to use me!</code>
+    Add me to your chat as administrator with `can_invite_users` administrator right. And forward me a message from that chat to set me up
 
 help = <b>Usage instructions.</b>
     
