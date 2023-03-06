@@ -7,22 +7,13 @@ const composer = new Composer<MyContext>();
 
 composer
   .command("start", async (ctx) => {
-    if (ctx.chat.type != "private" && ctx.match == "by_BotzHub") {
-      await ctx.reply("Continue setting me up in PM!", {
-        reply_markup: new InlineKeyboard().url(
-          "Continue",
-          `https://t.me/${ctx.me.username}`,
-        ),
-      });
-      return;
-    }
     if (ctx.chat.type != "private") return;
     await ctx.reply(ctx.t("start-msg", { user: ctx.from!.first_name }), {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
-        .text(ctx.t("usage-help"), "helper")
-        .text("Language 🌐", "setLang").row()
-        .url(ctx.t("updates"), "https://t.me/BotzHub"),
+        .url("➕ Add Me To Your Channel ➕", "https://t.me/ChatActionBot?startchannel=true")
+        .url("➕ Add Me To Your Group ➕", "https://t.me/ChatActionBot?startgroup=true").row()
+        .url("📢 Updates Channel", "https://t.me/LinuxBotz"),
       disable_web_page_preview: true,
     });
     await addUser(ctx.from!.id);
@@ -34,8 +25,8 @@ composer.callbackQuery("mainMenu", async (ctx) => {
     {
       parse_mode: "HTML",
       reply_markup: new InlineKeyboard()
-        .text(ctx.t("usage-help"), "helper")
-        .text("Language 🌐", "setLang").row()
+        .url("➕ Add Me To Your Channel ➕", "https://t.me/ChatActionBot?startchannel=true")
+        .url("➕ Add Me To Your Group ➕", "https://t.me/ChatActionBot?startgroup=true").row()
         .url(ctx.t("updates"), "https://t.me/BotzHub"),
       disable_web_page_preview: true,
     },
