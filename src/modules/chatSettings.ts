@@ -43,7 +43,7 @@ composer
   .chatType("private")
   .filter((ctx) =>
     !ctx.msg?.text?.startsWith("/") &&
-    ctx.msg?.forward_from_chat?.type == "channel" || ctx.msg?.forward_from_chat?.type == "group"
+    ctx.msg?.forward_from_chat?.type == "channel" || ctx.msg?.forward_from_chat?.type == "supergroup"
   )
   .on("message", async (ctx) => {
     const chat = ctx.msg?.forward_from_chat?.id;
