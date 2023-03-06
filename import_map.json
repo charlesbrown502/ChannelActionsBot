@@ -12,6 +12,6 @@
     "mongo_sessions": "https://deno.land/x/grammy_storages@v2.1.0/mongodb/src/mod.ts",
     "language": "https://deno.land/x/language@v0.1.0/mod.ts",
     "grammy_runner": "https://deno.land/x/grammy_runner@v1.0.4/mod.ts",
-    "$env": "./env.ts"
+    "/$env": "./env.ts"
   }
 }
